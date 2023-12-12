@@ -32,4 +32,95 @@
     color: $white-normal;
     min-height: 80vh;
     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+
+    h1{
+        text-align: center;
+        line-height: 150%;
+        max-width: 940px;
+        font-size: 48px;
+    }
+
+    p{
+        text-align: center;
+        margin: 14px 0;
+        
+    }
+}
+
+.button-contact{
+    padding: 14px 28px;
+    color: $white-normal;
+    background-color: $red-normal;
+    transition: background-color 0.5s;
+    border: 0;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 14px 0; 
+}
+
+.button-contact:hover{
+    animation: scaleButton 0.9s alternate infinite;
+}
+
+
+
+
+@keyframes scaleButton{
+    from{
+        transform: scale(1);
+    }
+
+    to{
+        transform: scale(1.05);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero{
+        min-height: 60vh;
+
+        h1{
+            font-size: 34px;
+            padding: 0 14px;
+            width: 100%;
+        }
+
+        p{
+            font-size: 14px;
+        }
+    }
+
+
+}
+
+//-----------------------------------------------------------------
+
+//ABOUT
+
+.about{
+    background-color: $primary-normal;
+    overflow: hidden;
+    color: $white-normal;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 34px 14px 64px 14px;
+
+    img{
+        max-width: 570px;
+    }
+}
+
+
+.about-content div{
+    flex: 1;
 }
